@@ -14,10 +14,9 @@ let numArray = ['one', 'two', 'three', 'four', 'five', 'six',
 let opArray = ['add', 'sub', 'mul', 'div'];
 
 
-
 // Events
-numButtons.forEach(function(num){
-    num.addEventListener("click", function(e){
+numButtons.forEach((num) => {
+    num.addEventListener("click",(e) => {
         let cemp = e.currentTarget.classList;
 
         if(cemp.contains('num')){
@@ -39,8 +38,8 @@ numButtons.forEach(function(num){
         }
     })
 })
-opButtons.forEach(function(operator){
-    operator.addEventListener("click", function(e){
+opButtons.forEach((operator) => {
+    operator.addEventListener("click",(e) => {
         let omp = e.currentTarget.classList;
 
         if(omp.contains('op')){
@@ -68,14 +67,14 @@ opButtons.forEach(function(operator){
         }
     })
 })
-allClear.addEventListener("click", function(e){
+allClear.addEventListener("click",(e) => {
     let cb = e.currentTarget.classList;
     if(cb.contains('clear')){
         finalstr = "";
         setOut(finalstr);
     }
 })
-delButton.addEventListener("click", function(e){
+delButton.addEventListener("click",(e) => {
     let db = e.currentTarget.classList;
     if(db.contains('del')){
         tempstr = "";
@@ -87,7 +86,7 @@ delButton.addEventListener("click", function(e){
     }
 
 })
-sumFinal.addEventListener("click", function(e){
+sumFinal.addEventListener("click",(e) => {
     let emp = e.currentTarget.classList;
     if(emp.contains('equ')){
         let ts = finalstr;
